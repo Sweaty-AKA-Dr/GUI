@@ -1,0 +1,202 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "guipage0",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "Server GUI"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "§l§eLegends §8GUI"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§eSpawn"
+								}
+							]
+						},
+						"commands": [
+							"/tag @s add spawn"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§bShop §8& §aSell"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @s shopselector"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§9Extra"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @s guipage1 "
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§0Filler"
+								}
+							]
+						},
+						"commands": [
+							"/tellraw @s {\"rawtext:[{\"text\":\"§6Filler\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§cNext §7->"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @s guipage5 "
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Close GUI"
+								}
+							]
+						},
+						"commands": []
+					}
+				]
+			},
+		{
+			"scene_tag": "shopselector",
+			"npc_name": {
+				"rawtext": [
+					{
+						"text": "Shop"
+					}
+				]
+			},
+			"text": {
+				"rawtext": [
+					{
+						"text": "Go To Buy Or Sell Shop"
+					}
+				]
+			},
+			"buttons": [
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Buy"
+							}
+						]
+					},
+					"commands": [
+						"/tag @s add shop"
+					]
+				},
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Sell"
+							}
+						]
+					},
+					"commands": [
+						"/dialogue open @s @s shopselector1"
+					]
+				},
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Close GUI"
+							}
+						]
+					},
+					"commands": []
+				}
+			]
+		},
+			{
+			"scene_tag": "guipage1",
+			"npc_name": {
+				"rawtext": [
+					{
+						"text": ""
+					}
+				]
+			},
+			"text": {
+				"rawtext": [
+					{
+						"text": "Go To Buy Or Sell Shop"
+					}
+				]
+			},
+			"buttons": [
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Buy:"
+							}
+						]
+					},
+					"commands": [
+						"/tag @s add shop"
+					]
+				},
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Sell:"
+							}
+						]
+					},
+					"commands": [
+						"/tag @s add sell"
+					]
+				},
+				{
+					"name": {
+						"rawtext": [
+							{
+								"text": "Close GUI"
+							}
+						]
+					},
+					"commands": []
+				}
+			]
+		}
+	]
+}
+}
